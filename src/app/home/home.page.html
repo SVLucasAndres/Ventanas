@@ -1,20 +1,72 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Blank
+      Hogar de Lucas
     </ion-title>
   </ion-toolbar>
 </ion-header>
-
+  
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+  <ion-card color="warning" class="card">
+    <div class="parent">
+      <div class="estudio" [style.background-color]="estudio?'#102335':'#FFFFFF'" [style.color]="estudio?'#FFFFFF':'#000000'"> 
+        <div class="ventana" (click)="editar('Estudio')">
+          <div style="background-color: aquamarine; border: 1px black solid;"></div>
+          <div *ngIf="estudio" style="background-color: rgb(255, 255, 255); border: 1px black solid;"></div>
+          <div style="background-color: aquamarine; border: 1px black solid;"></div>
+        </div>
+        <div>
+          Estudio
+        </div>
+      </div>
+      <div class="bano" [style.background-color]="bano?'#06BCC1':'#FFFFFF'">
+        <div class="ventana" (click)="editar('Bano')">
+          <div style="background-color: aquamarine; border: 1px black solid;"></div>
+          <div *ngIf="bano" style="background-color: rgb(255, 255, 255); border: 1px black solid;"></div>
+          <div style="background-color: aquamarine; border: 1px black solid;"></div>
+        </div> 
+        Baño
+      </div>
+      <div class="dormPrin" [style.background-color]="dormPrin?'#12263A':'#FFFFFF'" [style.color]="dormPrin?'#FFFFFF':'#000000'">
+        <div class="ventana" (click)="editar('DormPrin')">
+          <div style="background-color: aquamarine; border: 1px black solid;"></div>
+          <div *ngIf="dormPrin" style="background-color: rgb(255, 255, 255); border: 1px black solid;"></div>
+          <div style="background-color: aquamarine; border: 1px black solid;"></div>
+        </div> 
+        Dormitorio Principal
+      </div>
+      <div class="dormSec" [style.background-color]="dormSec?'#F5D5B5':'#FFFFFF'"> 
+        <div class="ventana" (click)="editar('DormSec')">
+          <div style="background-color: aquamarine; border: 1px black solid;"></div>
+          <div *ngIf="dormSec" style="background-color: rgb(255, 255, 255); border: 1px black solid;"></div>
+          <div style="background-color: aquamarine; border: 1px black solid;"></div>
+        </div>
+        Dormitorio Secundario
+      </div>
+      <div class="cocina" [style.background-color]="cocina?'#C5D8D1':'#FFFFFF'">
+        <div class="ventana" (click)="editar('Cocina')">
+          <div style="background-color: aquamarine; border: 1px black solid;"></div>
+          <div *ngIf="cocina" style="background-color: rgb(255, 255, 255); border: 1px black solid;"></div>
+          <div style="background-color: aquamarine; border: 1px black solid;"></div>
+        </div>
+        Cocina
+      </div>
+      <div class="comedor" [style.background-color]="comedor?'#3E92CC':'#FFFFFF'"> 
+        <div class="ventana" (click)="editar('Comedor')">
+          <div style="background-color: aquamarine; border: 1px black solid;"></div>
+          <div *ngIf="comedor" style="background-color: rgb(255, 255, 255); border: 1px black solid;"></div>
+          <div style="background-color: aquamarine; border: 1px black solid;"></div>
+        </div>
+        Comedor
+      </div>
+      <div class="sala" [style.background-color]="sala?'#DDE3DE':'#FFFFFF'"> 
+        <div class="ventana" (click)="editar('Sala')">
+          <div style="background-color: aquamarine; border: 1px black solid;"></div>
+          <div *ngIf="sala" style="background-color: rgb(255, 255, 255); border: 1px black solid;"></div>
+          <div style="background-color: aquamarine; border: 1px black solid;"></div>
+        </div>
+        Sala
+      </div>
+    </div> 
+  </ion-card>
 </ion-content>

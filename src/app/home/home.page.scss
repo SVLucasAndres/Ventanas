@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+*{
+  font-family: "Bebas Neue", sans-serif;
+}
 #container {
   text-align: center;
 
@@ -7,7 +11,6 @@
   top: 50%;
   transform: translateY(-50%);
 }
-
 #container strong {
   font-size: 20px;
   line-height: 26px;
@@ -25,3 +28,75 @@
 #container a {
   text-decoration: none;
 }
+.card{
+  bottom:250px;
+}
+.parent {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  grid-template-rows: repeat(9, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  height: 50vw;
+  margin: 1rem;
+  }
+  
+  .estudio { grid-area: 1 / 7 / 4 / 10; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #000;} //div1
+  .bano { grid-area: 4 / 7 / 6 / 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000;}//div2
+    
+    .bano>ion-button{
+      width: 4rem;
+    }
+  .dormPrin { grid-area: 6 / 5 / 10 / 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 1px solid #000;}//div3
+  .dormSec { grid-area: 6 / 1 / 10 / 5;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000; }//div4
+  .cocina { grid-area: 1 / 5 / 6 / 7; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000;}//div5
+  .comedor { grid-area: 1 / 3 / 6 / 5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000;}//div6
+  .sala { grid-area: 1 / 1 / 6 / 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000;}//div7
+    .ventana{
+      display: flex;
+      width: 7vw;
+      height: 5vw;
+    }
+    .ventana>div{
+      flex-grow: 2;
+    }
+    .person{
+      position: absolute;
+      font-size: 2rem;
+    }
+  
